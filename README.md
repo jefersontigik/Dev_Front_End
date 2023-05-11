@@ -1,6 +1,6 @@
 # Dev_Front_End
 
-Brief description of the project goes here.
+This project, has as main objective, the professional and educational improvement. 
 
 ## Table of Contents
 
@@ -11,23 +11,17 @@ Brief description of the project goes here.
 
 ## Installation
 
-Provide instructions on how to install the project, such as:
-
 ```
 npm install
 ```
 
 ## Usage
 
-Explain how to use the project, such as:
-
 ```
 npm start
 ```
 
 ## Contributing
-
-Explain how others can contribute to the project, such as:
 
 1. Fork this repository
 2. Create a new branch (`git checkout -b feature/my-new-feature`)
