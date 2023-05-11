@@ -11,6 +11,25 @@
     width: 100%;
 }
 
+header{
+    padding: 4px;
+    background-color: pink;
+}
+
+p{
+    background-color: red;
+    padding: 5px;
+}
+
+.usuario{
+    display: none;
+}
+
+.senha{
+    display: none;
+    margin-bottom: 4px;
+}
+
 form{
     margin-top: 40px;
 }
@@ -21,6 +40,9 @@ input, textarea, button{
     margin-bottom: 8px;
     width: 100%;
     resize: none;
+    border: none;
+    outline: solid 2px black;
+    border-radius: 8px;
 }
 
 button{

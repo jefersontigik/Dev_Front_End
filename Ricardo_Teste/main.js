@@ -1,21 +1,27 @@
 
-addEventListener('submit', function(e){
+const form = document.getElementById('form_dep');
+console.log(form);
 
-    let num1 = parseInt(document.getElementById("num1").value);
-    let num2 = parseInt(document.getElementById("num2").value);
+form.addEventListener('submit', function(e){
+    e.preventDefault();
 
-    console.log(num1);
-    console.log(num2);
+    let nome = document.getElementById('nome');
+    let cadeado = document.getElementById('cadeado');
+    let usuario = document.getElementById('usuario');
+    let senha = document.getElementById('senha');
 
-    if(num1 > num2){
-        alert("Primeiro é maior");
-    }else if(num2 > num1){
+    if(nome.value != "Joao"){
 
-        return alert("Segundo é maior");
-    }else{
-        return alert("São iguais")
+        // usuario.style.display = 'block';
+        document.querySelector('.usuario').style.display = 'block';
 
-        alert("Segundo é maior");
+        console.log(cadeado.value);
+
+    }else if(cadeado.value  != "123"){
+
+        console.log('Aqui IF');
+        document.querySelector('.cadeado').style.display = 'block';
+        // senha.style.display = 'block';
     }
+    console.log('Depois do IF');
 })
-

@@ -8,13 +8,21 @@
         <link rel="stylesheet" href="./main.css"/>
     </head>
     <body>
+        <header>
+            <h1 id="nome_site">Meu Site</h1>
+        </header>
         <div class="container">
-            <h1>Internet Baking</h1>
-            <h2>Para saber se o primeiro número é maior que o segundo</h2>
+            <h1>Internet Web Site</h1>
+            <h2>Entrar na sua conta</h2>
             <form id="form_dep">
-                <input type="number" id="num1" required placeholder="Primeiro"/>
-                <input type="number" id="num2" required placeholder="Segundo"/>
-                <button type="submit" id="resultado">Resultado</button>
+                <h2>Usuário</h2>
+                <input type="text" id="nome" required placeholder="digite o nome de usuário"/>
+                <p class="usuario">Usuário incorreto</p>
+                <h2>Senha</h2>
+                <input type="text" id="cadeado" required placeholder="digite a sua senha"/>
+                <p class="senha">Senha incorreta</p>
+                <button type="submit">Logar</button>
+                
             </form>
         </div>
         <script src="./main.js"></script>
