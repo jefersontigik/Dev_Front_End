@@ -7,12 +7,14 @@
 
 .container{
     margin: 80px auto;
-    max-width: 300px;
+    max-width: 640px;
     width: 100%;
 }
 
 form{
     margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 input, textarea, button{
@@ -37,24 +39,9 @@ button:hover{
     background-color: #27ae60;
 }
 
-.mensagem_erro{
-    font-size: 12px;
-    padding: 8px;
-    background-color: red;
-    color: #fff;
-    margin-bottom: 8px;
-    display: none;
-}
-
-.mensagem_sucesso{
+.mensagem_retorno{
     background-color: #27ae60;
     color: #fff;
     padding: 16px;
     display: none;
-}
-
-input.error{
-    color: red;
-    border-color: red;
-    outline-color: red;
 }

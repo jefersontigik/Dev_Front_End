@@ -34,8 +34,13 @@ form.addEventListener('submit', function(e){
     }
 })
 
+let nome = [];
+
+function calculaArea(alt, base){return base * alt;}
+
 nomeBeneficiario.addEventListener('keyup', function(e){
     console.log(e.target.value);
+
     formValido = validaNome(e.target.value);
 
     if(formValido){

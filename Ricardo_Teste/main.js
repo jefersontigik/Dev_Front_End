@@ -1,6 +1,5 @@
 
 const form = document.getElementById('form_dep');
-console.log(form);
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -23,5 +22,4 @@ form.addEventListener('submit', function(e){
         document.querySelector('.cadeado').style.display = 'block';
         // senha.style.display = 'block';
     }
-    console.log('Depois do IF');
 })
