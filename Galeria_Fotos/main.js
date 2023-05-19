@@ -12,6 +12,7 @@ $(document).ready(function(){
         const enderecoDaNovaImagem = $('#endereco_imagem').val();
         const novoItem = $('<li style = "display: none"></li>');
         $(`<img src="${enderecoDaNovaImagem}"/>`).appendTo(novoItem);
+
         $(`
             <div class="image_link">
                 <a href="${enderecoDaNovaImagem}" title="Tamanho real" target="_blank">
@@ -19,8 +20,11 @@ $(document).ready(function(){
                 </a>
             </div>
         `).appendTo(novoItem);
+
         $(novoItem).appendTo('ul');
+
         $(novoItem).fadeIn(1000);
+        
         $('#endereco_imagem').val('');
     })
 })
