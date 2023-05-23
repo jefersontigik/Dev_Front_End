@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="main.css">
 
@@ -185,13 +185,63 @@
         </div>
     </section>
     <section id="formulario">
-        
+        <div class="container">
+            <h2>Entre em contato:</h2>
+            <form>
+                <div class="form_campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                </div>
+                <div class="form_campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone">
+                </div>
+                <div class="form_campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form_campo">
+                    <label for="veiculo_interesse">Veículo:</label>
+                    <input type="text" id="veiculo_interesse">
+                </div>
+                <div class="form_campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
+    <footer>
+        <div class="container container_flex">
+            <p>
+                2023 &copy; SENAC Motors - Todos os direitos reservados.
+            </p>
+            <ul class="container_flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="YouTube logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
