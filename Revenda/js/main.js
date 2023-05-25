@@ -13,6 +13,10 @@ $(document).ready(function(){
         placeholder: '(12)99345-8901'
     })
 
+    $('#cep').mask('00000-000',{
+        placeholder: '91420-589'
+    })
+
     $('form').validate({
         rules: {
             nome: {
@@ -60,5 +64,10 @@ $(document).ready(function(){
 
     $('#sendTo').click(function(){
         alert('Formulário enviado');
+        $('#veiculo_interesse').val('');
+        $('#nome').val('');
+        $('#telefone').val('');
+        $('#email').val('');
+        $('#mensagem').val('');
     })
 })
