@@ -9,7 +9,12 @@ $(document).ready(function(){
         $('nav').slideToggle();
     })
 
-    $('#telefone').mask('(00) 00000-0000', {
+    $('#nome').bind('keyup blur', function(){
+        let i = $(this);
+        i.val(i.val().replace(/[^a-z A-Z]/g, ''));
+    })
+
+    $('#telefone').mask('(00)00000-0000', {
         placeholder: '(12)99345-8901'
     })
 
@@ -17,7 +22,7 @@ $(document).ready(function(){
         placeholder: '91420-589'
     })
 
-    $('form').validate({
+    $('form').validate({  
         rules: {
             nome: {
                 required: true
