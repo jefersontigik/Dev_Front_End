@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 32px;
+}
+
+.elementos{
+    display: block;
+    width: 420px;
+    height: 420px;
+    border: 16px;
+}
+
+input, textarea, button{
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+.forma{
+    background-color: brown;
+    width: 75%;
+    height: 75%;
+}
+
+img{
+    /* width: 50%; */
+    /* height: 50em; */
+    /* width: 75vw; */
+    height: 45vh;
+    /* height: 420px;  */
+}
+
