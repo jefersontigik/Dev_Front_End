@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     $('#nome').bind('keyup blur', function(){
         let i = $(this);
-        i.val(i.val().replace(/[^a-z A-Z]/g, ''));
+        i.val(i.val().replace(/[^a-zA-Z]/g, ''));
     })
 
     $('#telefone').mask('(00)00000-0000', {
