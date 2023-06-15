@@ -11,7 +11,9 @@ body {
 
 header {
   padding: 16px 0;
-  background-color: yellow;
+  background-color: #01a3a4;
+  text-align: center;
+  color: #eee;
 }
 
 .container {
@@ -26,14 +28,50 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 760px;
+}
+.form-container h2 {
+  font-size: 3em;
+  text-align: center;
 }
 .form-container form {
   width: 100%;
+  max-width: 480px;
+  margin-top: 40px;
 }
-.form-container form input, .form-container form button {
+.form-container form label {
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-container form input {
   padding: 8px;
   display: block;
   width: 100%;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #01a3a4;
+}
+.form-container form button {
+  padding: 8px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #00d2d3;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #eee;
+}
+.form-container form buttonhover {
+  background-color: #21feff;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
